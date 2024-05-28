@@ -9,8 +9,8 @@ const News = ({simplified}) => {
   const [newsCategory, setNewsCategory] = useState('Cryptocurrencies');
   const count = simplified ? 6: 12;
   const {data: cryptoNews} = useGetCryptoNewsQuery(count);
-  console.log("news", cryptoNews);
-  console.log("newsdata", cryptoNews?.data);
+  // console.log("news", cryptoNews);
+  // console.log("newsdata", cryptoNews?.data);
   const demoImage = 'https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News';
 
   if(!cryptoNews?.data) return 'Loading ...'

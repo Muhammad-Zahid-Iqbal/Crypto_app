@@ -10,7 +10,7 @@ const { data: cryptoList, isFetching } = useGetCryptosQuery(count);
 const [cryptos, setCryptos] = useState([]);
 const [searchTerm, setSearchTerm] = useState('');
 
-console.log("cryptos",cryptos);
+// console.log("cryptos",cryptos);
 
 useEffect(() => {
   if (typeof searchTerm === 'string') {
